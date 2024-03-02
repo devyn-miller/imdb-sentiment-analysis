@@ -6,4 +6,4 @@ def predict_and_visualize(review):
     return sentiment
 
 iface = gr.Interface(fn=predict_and_visualize, inputs="text", outputs="text")
-iface.launch()
+iface.launch(host="localhost")
